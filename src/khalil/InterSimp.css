@@ -1,0 +1,54 @@
+.flexrowcenter {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.section-impact {
+  width: 100%;
+}
+
+.impact {
+  background-color: #ce0033;
+}
+.impact-container {
+  background: white
+    url(https://www.esylux.com/fileadmin/_02-international/international.jpg)
+    no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 1000px;
+}
+
+.title-impact {
+  text-align: center;
+  color: #ce0033;
+}
+
+.public-impact {
+  text-align: center;
+}
+
+.public-impact pre {
+  max-height: 25vh;
+  overflow: auto;
+}
+
+.public-impact span {
+  color: #d03d33;
+  font-size: 1.5rem;
+}
+.en-total-impact {
+  text-align: center;
+  margin-left: 90px;
+}
+
+.en-total-impact .operators {
+  color: black;
+  font-size: 1.5rem;
+  display: block;
+}
+
+.en-total-impact .number {
+  color: #d03d33;
+  font-size: 1.5rem;
+}
