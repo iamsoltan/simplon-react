@@ -1,26 +1,35 @@
 import React from 'react';
-import logo from './logo.svg';
+import Navbar from './navbar/navbar'
+import Footer from './footer/footer'
+import Flex from './flex-photo-text/flex-photo-text'
+
 import './App.css';
+
+
+const links = [
+
+  { name: "Acceuil", link: "##" },
+  { name: "A propos ", link: "##" },
+  { name: "Equipe", link: "##" },
+  { name: "Contact", link: "##" }
+
+]
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div >
+
+      <Navbar links={links} />
+      <Flex />
+      <Footer links={links} />
     </div>
+
   );
 }
 
 export default App;
+
+
+
