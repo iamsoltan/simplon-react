@@ -2,11 +2,13 @@ import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import InterSimp from "./khalil/InterSimp"; //to test InterSimp component
+import Descript from "./khalil/Descript";
 
 function App() {
   return (
     <React.StrictMode>
       <InterSimp />
+      <Descript />
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />

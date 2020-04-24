@@ -1,0 +1,10 @@
+.image img{
+
+    box-shadow: 10px 10px #ce0033;
+}
+
+
+.left img{
+    display: block;
+    margin-left: auto;
+}
