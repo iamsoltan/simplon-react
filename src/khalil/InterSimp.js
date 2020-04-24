@@ -41,11 +41,11 @@ function InterSimp() {
               <p>
                 <span className="number">89% </span>sorties positives{" "}
                 <span className="operators"> = </span> <br />
-                <span classeName="number">71% </span> des sorties vers l'emploi{" "}
-                <span classeName="operators"> + </span>{" "}
-                <span classeName="number">9% </span> des sories vers
-                l'entrepreneuriat <span classeName="operators"> + </span>{" "}
-                <span classeName="number">9%</span> de sorties formation
+                <span className="number">71% </span> des sorties vers l'emploi{" "}
+                <span className="operators"> + </span>{" "}
+                <span className="number">9% </span> des sories vers l'entrepreneuriat{" "}
+                <span className="operators"> + </span>{" "}
+                <span className="number">9%</span> de sorties formation{" "}
               </p>
             </div>
           </div>
