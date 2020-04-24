@@ -1,3 +1,9 @@
+
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import InterSimp from "./khalil/InterSimp"; //to test InterSimp component
+
 import React from 'react';
 import Navbar from './navbar/navbar'
 import Footer from './footer/footer'
@@ -9,6 +15,7 @@ import Map from './staff/map'
 import Contact  from './staff/contactfrom'
 class  App extends  React.Component{
   constructor(props) {
+
 
 
     super(props);
@@ -29,6 +36,25 @@ class  App extends  React.Component{
   }
   render() {
   return (
+    <React.StrictMode>
+      <InterSimp />
+      <div className="App">
+        <header className="App-header">
+          <img src={logo} className="App-logo" alt="logo" />
+          <p>
+            Edit <code>src/App.js</code> and save to reload.
+          </p>
+          <a
+            className="App-link"
+            href="https://reactjs.org"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Learn React
+          </a>
+        </header>
+      </div>
+    </React.StrictMode>
     <div className="App">
       <form onSubmit={this.handelSubmit}>
          
@@ -61,6 +87,7 @@ function App() {
       <Footer links={links} />
 
     </div>
+
 
   );
 }
