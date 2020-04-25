@@ -1,26 +1,39 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './Descript.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+/* how to use :
+props : 
+title : the title in pink
+paragraph : the content in the paragraph
+right_left : put "right" if you want image at the right ...
+*/
+function Descript(props) {
+  if (props.right_left === "right") {
+    return (
+      <section className="outerContainer">
+        <div className="innerContainer">
+        <div className="txt">
+          <h2> {props.title} </h2>
+          <p>{props.paragraph}</p>
+          </div>
+       <div  className="img" ><img src ={props.img_url} alt="imag" /></div>
+       </div>   
+       </section>
+    );
+  }
+  if (props.right_left === "left") {
+    return (
+      <section className="outerContainer">
+        <div className="innerContainer">
+        <div  className="img" ><img src ={props.img_url} alt="imag" /></div>
+        <div className="txt">
+          <h2> {props.title} </h2>
+          <p>{props.paragraph}</p>
+          </div>
+       </div>   
+       </section>
+    );
+  }
 }
 
-export default App;
+export default Descript;
