@@ -1,4 +1,6 @@
-import React from 'react';
+
+import React from "react";
+import "./App.css";
 import { BrowserRouter , Route}  from 'react-router-dom';
 import  Propos  from './Apropos'
 import  Contacteznous from './contacteznous'
@@ -23,11 +25,16 @@ const links = [
   <Route  path = "/Contacteznous" component = {Contacteznous}/> 
      <Footer links={links} /> 
     </div>
+
     </BrowserRouter>
    
    
   ) 
   
+
+
+
+
 }
 
 export default App

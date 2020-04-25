@@ -1,26 +1,21 @@
 import React from "react";
-import logo from "./logo.svg";
-import "./App.css";
+import "./Jess.css";
 
-function App() {
+function Jess() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <section className="outerContainer">
+      <iframe
+        title="just iframe"
+        width="900"
+        height="455"
+        src="https://www.youtube.com/embed/ePzhdkG2ZxQ"
+        frameBorder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      ></iframe>
+    </section>
   );
 }
 
-export default App;
+export default Jess;
+
