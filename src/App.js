@@ -6,9 +6,13 @@ import Descript from "./khalil/Descript";
 import Jess from "./khalil/Jess";
 
 import React from 'react';
+
+import Equipe from './equipe/equipe';
+
 import Navbar from './navbar/navbar'
 import Footer from './footer/footer'
 import Flex from './flex-photo-text/flex-photo-text'
+
 
 import './App.css';
 import Slider from './staff/staff'
@@ -48,6 +52,9 @@ class  App extends  React.Component{
       <InterSimp />
     </React.StrictMode>
     <div className="App">
+
+      <Equipe />
+
       <form onSubmit={this.handelSubmit}>
          
       <input type="text"/>

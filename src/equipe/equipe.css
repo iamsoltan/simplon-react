@@ -1,0 +1,26 @@
+.boxEquipe{
+   
+    border: solid black;
+    width: 150px;
+    padding: 15px;
+    border-radius: 2%;
+    box-shadow: 10px 10px 5px grey;
+    margin-bottom: 40px;
+    margin: 25px;
+
+}
+
+.ContainreboxEquipe{
+  
+    display: inline-flex;
+  
+}
+.titre-equipe{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ce0033;
+    text-align: center;
+}
+.pargraphe-equipe{
+    font-size: 67.5%;
+    color: #212529;
+}
