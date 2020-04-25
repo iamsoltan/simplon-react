@@ -1,0 +1,19 @@
+.image-flex{
+    box-shadow: 10px 10px #ce0033;
+    box-sizing: border-box;
+
+
+
+}
+.presentation-text-titre{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ce0033;
+}
+.presentation-text-paragraphe{
+    width: 450px;
+
+}
+.flex-presentation{
+    display:flex;
+    justify-content: space-around;
+}
