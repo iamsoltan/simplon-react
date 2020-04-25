@@ -1,47 +1,33 @@
 import React from 'react';
-import Navbar from './navbar/navbar'
-import Footer from './footer/footer'
-import Flex from './flex-photo-text/flex-photo-text'
-
-import './App.css';
-import Slider from './staff/staff'
-import Map from './staff/map'
-import Contact  from './staff/contactfrom'
+import { BrowserRouter , Route}  from 'react-router-dom';
+import  Propos  from './Apropos'
+import  Contacteznous from './contacteznous'
+import  Navbar from './navbar/navbar'
+import  Footer from './footer/footer'
+import Acceuil  from './Acceuil'
+import Equipe  from './Equipe'
 const links = [
-
-  { name: "Acceuil", link: "##" },
-  { name: "A propos ", link: "##" },
-  { name: "Equipe", link: "##" },
-  { name: "Contact", link: "##" }
-
-]
-
-
-
-function App() {
+  { name: "Acceuil", link: "/index" },
+  { name: "A propos ", link: "/Apropos" },
+  { name: "Equipe", link: "/Equipe" },
+  { name: "Contact", link: "/contacteznous" }
+ ]
+ function App() {
   return (
-    <div >
-
-      <Navbar links={links} />
-      <Flex />
-      <Map/>
- <Slider/>
- <Contact titre={presentation}/>
+    <BrowserRouter>
+    <div className="app">
+    <Navbar links={links}/>
+    <Route exact path = "/index" component = {Acceuil}/>
+    <Route exact path = "/Apropos" component = {Propos}/>
+    <Route exact path = "/Equipe" component = {Equipe}/>
+  <Route  path = "/Contacteznous" component = {Contacteznous}/> 
       <Footer links={links} />
-  
-  
-  
-
     </div>
-
-  );
+    </BrowserRouter>
+   
+   
+  ) 
+  
 }
 
-
-
-export default App;
-
-
-
-
-
+export default App

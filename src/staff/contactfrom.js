@@ -1,17 +1,24 @@
 import React from 'react';
 import './staf.css'
 
+
+
+
+
 export default function contacte()
 {
  return (
   <>
-<section class=" container  mb-4">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"></link>
+<div class=" container  mb-4">
 
     
-    <h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
+    <h2 class="h1-responsive font-weight-bold text-center my-4" style ={{color:"#ce0033"}}>Contact us</h2>
   
-    <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
-        a matter of hours to help you.</p>
+    <p class="text-center w-responsive mx-auto mb-5">Avez-vous des questions? N'hésitez pas à nous contacter directement. Notre équipe reviendra vers vous 
+
+
+       .</p>
 
     <div class="row bq-danger ">
 
@@ -25,8 +32,8 @@ export default function contacte()
                   
                     <div class="col-md-6 ">
                         <div class="md-form mb-0">
-                        <label for="name" class="">Your name</label>
-                            <input type="text" id="name"  placeholder="Ton nom" name="name" class="form-control"/>
+                        <label for="name" className="text-white">Ton Nom</label>
+                            <input type="text" id="name"  placeholder="Ton nom" name="name" className=" input form-control"/>
                             
                         </div>
                     </div>
@@ -35,8 +42,8 @@ export default function contacte()
                     
                     <div class="col-md-6">
                         <div class="md-form mb-0">
-                        <label for="email" class="">Your email</label>
-                            <input type="text" id="email" placeholder="email" name="email" class="form-control"/>
+                        <label for="email" className="text-white">Ton email</label>
+                            <input type="text" id="email" placeholder="email" name="email" className=" input form-control"/>
                             
                         </div>
                     </div>
@@ -49,8 +56,8 @@ export default function contacte()
                 <div class="row">
                     <div class="col-md-6 ">
                         <div class="md-form mb-0">
-                        <label for="subject" class="">Subject</label>
-                            <input type="text" id="subject"  placeholder="sujet " name="subject" class="form-control"/>
+                        <label for="subject" className="text-white">Sujet</label>
+                            <input type="text" id="subject"  placeholder="sujet " name="subject" className=" input form-control"/>
                             
                         </div>
                     </div>
@@ -64,8 +71,8 @@ export default function contacte()
                     <div class="col-md-6 ">
 
                         <div class="md-form">
-                        <label for="message">Your message</label>
-                            <textarea type="text" id="message" placeholder="message" name="message" rows="2" class="form-control"></textarea>
+                        <label for="message" className="text-white"> message</label>
+                            <textarea type="text" id="message" placeholder="message" name="message" rows="2" className ="input form-control"></textarea>
                           
                         </div>
 
@@ -76,7 +83,7 @@ export default function contacte()
             </form>
 
             <div class="text-center text-md-left">
-                <button class="btn btn-primary" onclick="submit()">Send</button>
+                <button class="btn btn-primary" onclick="submit()">Envoi message</button>
             </div>
             <div class="status"></div>
         </div>
@@ -84,16 +91,16 @@ export default function contacte()
 
         <div class="col-md-3 text-center">
             <ul class="list-unstyled mb-0">
-                <li><i class="fas fa-map-marker-alt fa-2x"></i>
-                    <p>San Francisco, CA 94126, USA</p>
+                <li><i i class="fa fa-map"></i>
+                    <p>rue barcalone , tunisie</p>
                 </li>
 
-                <li><i class="fas fa-phone mt-4 fa-2x"></i>
-                    <p>+ 01 234 567 89</p>
+                <li><i class="fa fa-phone mt-4 fa-2x"></i>
+                    <p>+ 2162500000000</p>
                 </li>
 
-                <li><i class="fas fa-envelope mt-4 fa-2x"></i>
-                    <p>contact@mdbootstrap.com</p>
+                <li><i class="fa fa-envelope mt-4 fa-2x"></i>
+                    <p>simplon tunisie @gmail.com</p>
                 </li>
             </ul>
         </div>
@@ -101,7 +108,7 @@ export default function contacte()
 
     </div>
 
-</section>
+</div>
 </>
 )
 }

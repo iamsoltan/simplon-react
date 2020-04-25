@@ -4,11 +4,6 @@ export default class History extends React.Component {
     constructor(props) {
       super(props);
       this.state = { 
-        items: [
-          'image/IMG_0428.jpg',
-          'image/slide1.png',
-          'image/IMG_1268.jpg'
-        ], 
         current: 0, 
         isNext: true 
       };

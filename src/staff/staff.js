@@ -17,7 +17,7 @@ class Slider extends React.Component {
       this.state = { 
         items: [
           'https://simplon.co/storage/1326/responsive-images/home_image_1110x550___medialibrary_original_1110_550.jpg',
-          'slide1.png',
+         'slide1.png',
           '../image/IMG_1268.jpg'
         ], 
         current: 0, 
@@ -78,16 +78,7 @@ class Slider extends React.Component {
         
        
        
-        <div className="app">
-      
-      
-      
-          <FontAwesomeIcon icon={['fa', "font-case"]} />
-          <FontAwesomeIcon icon={['fa', 'facebook-messenger']} />
-          <FontAwesomeIcon icon={['fas', 'fa-laptop-house']} />
-          <FontAwesomeIcon icon={faBeer} className="blanc" />
-           
-            <p>bonjour</p>
+        <div className="app marginlet">
           <br/><br/>
           <div className="carousel">
                <div className="carousel_slide" key={index}>

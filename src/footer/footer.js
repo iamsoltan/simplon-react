@@ -16,7 +16,7 @@ function Footer(props) {
             <div className="footer-sectioon1">
 
 
-                {props.links.map(element => <a className="linkss2" href={element.link}>{element.name}</a>)}
+                {props.links.map(element => <a className="linkss2" href={element.link} >{element.name}</a>)}
 
             </div>
             <section className="footer-section2">
