@@ -21,7 +21,7 @@ const links = [
     <Route exact path = "/Apropos" component = {Propos}/>
     <Route exact path = "/Equipe" component = {Equipe}/>
   <Route  path = "/Contacteznous" component = {Contacteznous}/> 
-      <Footer links={links} />
+     <Footer links={links} /> 
     </div>
     </BrowserRouter>
    
