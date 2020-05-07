@@ -9,10 +9,18 @@
     margin: 25px;
 
 }
+.pargraphe-equipe-introduction{
+   text-align: center;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+     font-size: 67.5%;
+    color: #212529;
+    margin: 25px;
+}
 
 .ContainreboxEquipe{
   
     display: inline-flex;
+  margin-left: 25%;
   
 }
 .titre-equipe{
@@ -23,4 +31,10 @@
 .pargraphe-equipe{
     font-size: 67.5%;
     color: #212529;
+}
+.container-image-card{
+    border-radius: 50% ;
+    width: 100px;
+
+
 }
